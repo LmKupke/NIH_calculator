@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FormContainer from './FormContainer'
+import BabyWeight from './BabyWeight'
 
 class App extends Component {
   render() {
