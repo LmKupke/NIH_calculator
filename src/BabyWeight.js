@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import TotalFluid from './TotalFluid';
 
-class FormContainer extends Component {
+class BabyWeight extends Component {
   constructor(props) {
    super(props);
    this.state = {babyWeightGs: '', babyWeightKgs: ''};
@@ -31,9 +32,13 @@ class FormContainer extends Component {
           Weight (kg):
               <input type="text" value={this.state.babyWeightKgs} onChange={this.convertToG} />
       </label>
+        <TotalFluid
+         babyWeightGs={this.state.babyWeightGs}
+         babyWeightKgs={this.state.babyWeightKgs}
+         />
     </div>
     );
   }
 }
 
-export default FormContainer;
+export default BabyWeight;
